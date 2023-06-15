@@ -1,0 +1,75 @@
+body{
+background-image: url("/article.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+
+
+
+.heros{
+    display : flex;
+    flex-wrap:wrap;
+    width : 650px;
+    margin: 80 auto;
+    justify-content: center;
+}
+
+.heros .hero{
+ background-color: aqua;
+width: 80px;
+height: 85px;
+margin: 5px;
+transform: skewX(-10deg);
+border: 3px solid white;
+box-sizing: border-box;
+border-radius: 10px;
+transition: 
+transform .1s, 
+background-color .8s ;
+}
+
+.heros .hero:hover{
+background-color: orange;
+transform: skewX(-10deg) scale(1.3);
+}
+.heros .hero:nth-child(1) .image{
+background-image: url("/haerin.jpg");
+width: 80px;
+height: 80px;
+background-size: cover;
+transform:skewX(10deg);
+border-radius: 30px;
+}
+.heros .hero:nth-child(2) .image{
+    background-image: url("/maxresdefault.jpg");
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    transform:skewX(10deg);
+    border-radius: 30px;
+}
+.heros .hero:nth-child(3) .image{
+    background-image: url("/images.jfif");
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    transform:skewX(10deg);
+    border-radius: 30px;
+}
+
+
+.heros .hero .image {
+
+}
+
+.logo {
+    margin: 0 auto;
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+}
